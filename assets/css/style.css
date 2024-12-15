@@ -1,26 +1,30 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Macondo&display=swap');
 
-/* CSS Variables */ 
+/* CSS Variables */
 :root {
-    --primary-font: "Inter", sans-serif; 
-    --secondary-font: "Macondo", cursive; 
-    --primary-color: #3a2620; /* dark brown */
-    --secondary-color: #aa9581; /* light brown */
-    --highlight-color: #416a8e; /* blue */
-    --highlight-color-light: #7a9fc2 /* light blue */
+    --primary-font: "Inter", sans-serif;
+    --secondary-font: "Macondo", cursive;
+    --primary-color: #3a2620;
+    /* dark brown */
+    --secondary-color: #aa9581;
+    /* light brown */
+    --highlight-color: #416a8e;
+    /* blue */
+    --highlight-color-light: #7a9fc2
+        /* light blue */
 }
 
-/* Global Styles */ 
+/* Global Styles */
 
 body {
     font-family: var(--primary-font);
 }
 
-h1, 
-h2, 
+h1,
+h2,
 h3 {
-    font-family: var(--secondary-font); 
+    font-family: var(--secondary-font);
     color: var(--primary-color)
 }
 
@@ -42,7 +46,7 @@ h2 {
     margin-bottom: 2rem;
 }
 
-/* Navbar */ 
+/* Navbar */
 #navbar {
     background-color: var(--primary-color);
 }
@@ -51,12 +55,12 @@ h2 {
     width: 30px;
 }
 
-/* Header */ 
+/* Header */
 #header .lead {
     font-family: var(--secondary-font)
 }
 
-/* Services */ 
+/* Services */
 #services .card-footer {
     font-weight: bold;
     color: var(--highlight-color);
@@ -78,3 +82,37 @@ h2 {
     border: 2px solid white;
     background-color: lightgrey;
 } */
+
+/* Media queries */
+
+/* Medium devices (tablets, 768px and up) */ 
+@media screen and (min-width: 768px) {
+    /* make all service cards the same height for consistency */
+    #services .card-body {
+        min-height: 191px; 
+    }
+}
+
+/* Large devices (laptop, 992px and up) */ 
+@media screen and (min-width: 992px) {
+    /* make all service cards the same height for consistency */
+    #services .card-body {
+        min-height: auto; 
+    }
+}
+
+/* X Large devices (1200px and up) */ 
+@media screen and (min-width: 1200px) {
+    /* make all service cards the same height for consistency */
+    #services .card-body {
+        min-height: 220px; 
+    }
+}
+
+/* xxl devices (1400px and up) */ 
+@media screen and (min-width: 1400px) {
+    /* make all service cards the same height for consistency */
+    #services .card-body {
+        min-height: 195px; 
+    }
+}
