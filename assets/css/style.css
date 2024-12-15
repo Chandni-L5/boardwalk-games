@@ -71,6 +71,12 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+/* Library */
+#library .card {
+    border: none;
+    margin-bottom: 3rem;
+}
+
 /* grid visualisation CSS for testing */
 
 /* .container, 
