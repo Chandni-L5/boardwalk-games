@@ -71,10 +71,11 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
-/* Library */
-#library .card {
+/* Game library cards */
+
+#new-games .card,
+#fav-games .card {
     border: none;
-    margin-bottom: 3rem;
 }
 
 /* grid visualisation CSS for testing */
